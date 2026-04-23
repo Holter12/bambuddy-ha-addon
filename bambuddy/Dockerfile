@@ -15,8 +15,8 @@ RUN apk add --no-cache \
 WORKDIR /app
 
 # Clone spesifikk release (IKKE latest!)
-ARG BAMBUDDY_VERSION=v1.1.0
-RUN git clone --branch ${BAMBUDDY_VERSION} https://github.com/maziggy/bambuddy.git .
+ARG BAMBUDDY_VERSION=main
+RUN git clone --depth 1 --branch ${BAMBUDDY_VERSION} https://github.com/maziggy/bambuddy.git .
 
 # Installer deps
 RUN pip install --no-cache-dir -r requirements.txt
