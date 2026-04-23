@@ -1,20 +1,22 @@
 # BambuBuddy Home Assistant Add-on
 
-Run BambuBuddy directly inside Home Assistant OS.
+Run BambuBuddy inside Home Assistant OS.
+
+## Features
+- Ingress support (runs inside HA UI)
+- Multi-arch (Raspberry Pi + x86)
+- Local-only (no cloud)
 
 ## Installation
 
-1. Go to Settings → Add-ons → Add-on Store
-2. Click ⋮ → Repositories
-3. Add:
+1. Add repository:
    https://github.com/holter12/bambuddy-ha-addon
-4. Install BambuBuddy
+2. Install add-on
+3. Start
 
 ## Requirements
-
 - Bambu printer with Developer Mode enabled
 - Same network as Home Assistant
 
-## Access
-
-http://homeassistant.local:8000
+## Notes
+- Uses host network for printer discovery
