@@ -1,8 +1,8 @@
 {
   "name": "BambuBuddy",
-  "version": "1.2.0",
+  "version": "1.0.0",
   "slug": "bambuddy",
-  "description": "Self-hosted Bambu Lab companion",
+  "description": "Bambu Lab companion (prebuilt image)",
   "url": "https://github.com/holter12/bambuddy-ha-addon",
 
   "startup": "services",
@@ -22,27 +22,15 @@
   },
 
   "ports_description": {
-    "8000/tcp": "Web Interface"
+    "8000/tcp": "Web UI"
   },
 
   "map": [
-    "config:rw",
-    "ssl"
+    "config:rw"
   ],
 
-  "environment": {
-    "TZ": "UTC"
-  },
-
-  "options": {
-    "port": 8000,
-    "log_level": "info"
-  },
-
-  "schema": {
-    "port": "int(1024,65535)",
-    "log_level": "list(trace|debug|info|warning|error|fatal)"
-  },
+  "options": {},
+  "schema": {},
 
   "homeassistant": "2024.6.0"
 }
