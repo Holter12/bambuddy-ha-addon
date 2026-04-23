@@ -1,0 +1,30 @@
+{
+  "name": "BambuBuddy",
+  "version": "1.1.0",
+  "slug": "bambuddy",
+  "description": "Bambu Lab companion app",
+  "startup": "services",
+  "boot": "auto",
+  "init": false,
+
+  "arch": ["aarch64"],
+
+  "host_network": true,
+
+  "ports": {
+    "8000/tcp": 8000
+  },
+
+  "ports_description": {
+    "8000/tcp": "Web UI"
+  },
+
+  "map": [
+    "config:rw"
+  ],
+
+  "options": {},
+  "schema": {},
+
+  "webui": "http://[HOST]:[PORT:8000]"
+}
